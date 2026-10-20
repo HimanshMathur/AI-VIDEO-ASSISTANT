@@ -1,0 +1,6 @@
+'नहीं' -> 'नहीं' (expected 'नहीं') OK=True
+'मैं' -> 'मैं' (expected 'मैं') OK=True
+'hello world ' -> 'hello world' (expected 'hello world') OK=True
+'abcा ' -> 'abcा' (expected 'abc') OK=False
+'वीडियो' -> 'वीडियो' (expected 'वीडियो') OK=True
+'test' -> 'test' (expected 'test') OK=True

@@ -1,0 +1,28 @@
+
+=== story_gappu ===
+audio_dur=64.806875s num_segs=32
+first_start=0.75s last_end=64.55s (coverage=99.6%)
+zero_duration_segments=0 out_of_range_segments=0
+gaps>1s_count=1 first_gaps=[(38.6, 41.88, 3.28)]
+overlapping_segments=1
+
+=== missing_night_hi ===
+audio_dur=30.0s num_segs=20
+first_start=0.00s last_end=29.68s (coverage=98.9%)
+zero_duration_segments=0 out_of_range_segments=0
+gaps>1s_count=0 first_gaps=[]
+overlapping_segments=0
+
+=== hinglish_chapters ===
+audio_dur=237.44725s num_segs=76
+first_start=0.00s last_end=228.96s (coverage=96.4%)
+zero_duration_segments=0 out_of_range_segments=0
+gaps>1s_count=8 first_gaps=[(20.32, 22.86, 2.54), (38.6, 41.16, 2.56), (56.26, 68.1, 11.84), (74.52, 81.6, 7.08), (111.62, 113.16, 1.54)]
+overlapping_segments=7
+
+=== english_sample ===
+audio_dur=17.935875s num_segs=3
+first_start=0.00s last_end=17.02s (coverage=94.9%)
+zero_duration_segments=0 out_of_range_segments=0
+gaps>1s_count=0 first_gaps=[]
+overlapping_segments=0

@@ -1,0 +1,27 @@
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+
+# Temporary media & processing directories
+downloades/
+downloads/
+temp_uploads/
+vector_db/
+*.wav
+*.mp3
+*.mp4
+*.mkv
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

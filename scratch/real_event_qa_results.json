@@ -1,0 +1,58 @@
+[
+  {
+    "question_num": 1,
+    "query": "What is visible on the screen?",
+    "route": "VISUAL_ONLY",
+    "latency": 56.52289891242981,
+    "answer": "The screen displays a dark-themed interface with a sidebar showing the pipeline status, including completed steps like Input Validation, Audio Extraction, and Audio Quality Check. The main content has sections such as \"Q1 Focus,\" \"Target Date,\" and \"Strategic Commitment Matrix (SCM).\" There is a \"Deploy\" button in the top right, a \"Quick Questions\" section with buttons like \"Key Takeaways,\" \"Action Items,\" and \"Open Questions,\" and a text box for asking questions in the preferred language. The background is dark with white text."
+  },
+  {
+    "question_num": 2,
+    "query": "What changed on the screen during the video?",
+    "route": "VISUAL_ONLY",
+    "latency": 71.68515729904175,
+    "answer": "During the video, the screen showed a dark-themed interface for a video transcription and analysis pipeline. The main elements included:\n\n- A **sidebar** showing the **pipeline status**, with steps like **Input Validation**, **Audio Extraction**, and others, all marked as **completed**.\n- A **main content area** with sections like:\n  - **Step 1: Extract Names from the Transcript** (with a list of names like Alice, Bob, etc.)\n  - **Step 2: Identify Key Topics**\n  - **Step 3: Process** (with an **Analyze** button highlighted)\n- A **\"CHAT WITH VIDEO TRANSCRIPT\" header** with a **text box** for input.\n- A **\"YOU\" section** prompting the user to \"Read the full transcript to find names of all meeting participants.\"\n- A **\"ASSISTANT\" section** explaining the task.\n- A **\"3x3 video grid\"** (mentioned in the instructions, though not explicitly visible in the image).\n- A **\"Deploy\" button** in the top right and a **\"Deploy\" button** in the sidebar.\n- A **\"Quick Questions\" section** with buttons like **\"Key Takeaways\"**, **\"Action Items\"**, **\"Open Questions\"**, and **\"मुख्य बाते (Hindi)\"**.\n- A **bottom bar** with options like **\"Ask questions in your preferred language...\""
+  },
+  {
+    "question_num": 3,
+    "query": "What slides were shown?",
+    "route": "VISUAL_ONLY",
+    "latency": 47.816532135009766,
+    "answer": "Based on the information provided, the following slides were shown:\n\n1. **Main Title Slide**:  \n   - **Title**: \"Event Support and Product Announcements Discussion\"  \n   - **Source**: \"Product Marketing Meeting (weekly) 2021-06-28.mp4\"  \n\n2. **Step 2 Slide**:  \n   - **Title**: \"Step 2: Map Each Participant to Their Position in the 3x3 Grid\"  \n   - **Content**: A 3x3 grid mapping table with details like Row, Column, Name, Clothing, Background Description, On-Screen Name Tag, and GitLab Logo?  \n   - **Example Data**:  \n     - Row: 1  \n     - Column: 1  \n     - Name: Alice  \n     - Clothing: Blue patterned shirt  \n     - Background Description: Room with framed picture and curtains  \n\nThese are the only slides explicitly mentioned in the provided context."
+  },
+  {
+    "question_num": 4,
+    "query": "What charts or diagrams were visible?",
+    "route": "VISUAL_ONLY",
+    "latency": 5.355905055999756,
+    "answer": "None"
+  },
+  {
+    "question_num": 5,
+    "query": "What are the people doing?",
+    "route": "VISUAL_ONLY",
+    "latency": 12.212801933288574,
+    "answer": "The video does not provide enough visual evidence to determine that."
+  },
+  {
+    "question_num": 6,
+    "query": "What was shown on the screen when they discussed the video intelligence dossier?",
+    "route": "MULTIMODAL",
+    "latency": 16.551954746246338,
+    "answer": "The video intelligence dossier was shown on the screen with an Executive Dossier, Full Transcript, Visual Evidence, and Action Items. The \"Chat with Video\" section was also opened to interact with the grounded multimodal model."
+  },
+  {
+    "question_num": 7,
+    "query": "स्क्रीन पर कौन से चार्ट या चित्र दिखाई दे रहे हैं?",
+    "route": "VISUAL_ONLY",
+    "latency": 20.297690391540527,
+    "answer": "कोई चार्ट या चित्र नहीं दिखाई दे रहे हैं।"
+  },
+  {
+    "question_num": 8,
+    "query": "Video mein screen par kya chal raha hai aur kitne log hain?",
+    "route": "VISUAL_ONLY",
+    "latency": 26.38171887397766,
+    "answer": "Video mein screen par ek AI Video Assistant application ki interface chal rahi hai, jo ek video ke transcript aur analysis ki process karte hue hai. Screen par 3x3 video grid ka mapping bhi diya gaya hai, jo ki 9 logon ko represent karte hue hai. \n\n**Kitne log hain?**  \n9 log hain, jo ki 3x3 grid mein represent kiye gaye hain."
+  }
+]

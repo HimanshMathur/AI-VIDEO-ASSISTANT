@@ -1,0 +1,1175 @@
+{
+  "model": "large-v3",
+  "device": "cuda",
+  "compute": "int8_float16",
+  "results": [
+    {
+      "id": "story_gappu",
+      "kind": "Hindi storytelling",
+      "path": "C:\\Users\\mathu\\OneDrive\\Desktop\\AI-Video-Assistant--main\\AI-Video-Assistant--main (3)\\AI-Video-Assistant--main (2)\\AI-Video-Assistant--main\\downloads\\yt_10807aa488.wav",
+      "audio": {
+        "duration": 64.806875,
+        "sample_rate": 16000,
+        "channels": 1
+      },
+      "validate": {
+        "duration": 64.806875,
+        "sample_rate": 16000,
+        "channels": 1,
+        "rms": 0.035237811505794525
+      },
+      "num_chunks": 1,
+      "model": "large-v3",
+      "device": "cuda",
+      "compute": "int8_float16",
+      "transcribe_all_seconds": 64.2,
+      "transcribe_with_segments_seconds": 47.04,
+      "detected_language": "hi",
+      "num_segments": 32,
+      "segments": [
+        {
+          "start": 0.75,
+          "end": 5.27,
+          "text": "एक दिन एग छोटे से गहाँ में गप्पू नाम का एर चुहा रहता था",
+          "avg_logprob": -0.2753,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 5.27,
+          "end": 7.85,
+          "text": "गल्बी बहुत चतुर, लेकिन",
+          "avg_logprob": -0.2753,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 7.85,
+          "end": 8.85,
+          "text": "बेहद लालची थी",
+          "avg_logprob": -0.2753,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 8.85,
+          "end": 9.85,
+          "text": "उसे हमेशा लगता",
+          "avg_logprob": -0.2753,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 9.85,
+          "end": 11.85,
+          "text": "थै कि उत्से और ज्यादा",
+          "avg_logprob": -0.2753,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 11.85,
+          "end": 12.85,
+          "text": "खाना चाहिए",
+          "avg_logprob": -0.2753,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 12.85,
+          "end": 13.85,
+          "text": "एंक सुबह",
+          "avg_logprob": -0.2753,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 13.85,
+          "end": 14.85,
+          "text": "उ स",
+          "avg_logprob": -0.2753,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 14.85,
+          "end": 15.85,
+          "text": "खेत मे घूमते हुय",
+          "avg_logprob": -0.2753,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 15.85,
+          "end": 16.85,
+          "text": "ए चमचमाती",
+          "avg_logprob": -0.2753,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 16.85,
+          "end": 19.37,
+          "text": "रोटी बहुत बड़ी और सुनहरी थी",
+          "avg_logprob": -0.1785,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 19.37,
+          "end": 21.07,
+          "text": "जैसे ही उसने उسे चूआ",
+          "avg_logprob": -0.1785,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 21.3,
+          "end": 24.06,
+          "text": "रोटी बोल उठी, मैं एक जादूय रौटि हूं,",
+          "avg_logprob": -0.1501,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 24.78,
+          "end": 26.88,
+          "text": "अगर तुम मुझे किसी जरूरत्मन्द को दोगे,",
+          "avg_logprob": -0.1501,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 26.96,
+          "end": 29.12,
+          "text": "तो तमें मनचाहा इनाम मिलेगा.",
+          "avg_logprob": -0.1501,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 29.4,
+          "end": 32.18,
+          "text": "गप्पू चोंक गया, लेकिन फिर बुला,",
+          "avg_logprob": -0.1501,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 32.18,
+          "end": 34.48,
+          "text": "अगर मैं ये खुद खा ल",
+          "avg_logprob": -0.1866,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 34.48,
+          "end": 37.32,
+          "text": "तो मुहे ही सबसे बड़ा इनाम मिलेगा",
+          "avg_logprob": -0.1866,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 37.32,
+          "end": 38.6,
+          "text": "वह रोटी को लेकर",
+          "avg_logprob": -0.1866,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 41.88,
+          "end": 44.34,
+          "text": "जैसे ही पहला तुकडा मूह मे डाला,",
+          "avg_logprob": -0.195,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 44.7,
+          "end": 48.32,
+          "text": "रوटی गायब हो गए औड गत्पू का पेट दर्ध से بھर गیا,",
+          "avg_logprob": -0.195,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 48.42,
+          "end": 50.5,
+          "text": "तभी फेडर पर बैटा एक तोता बोला",
+          "avg_logprob": -0.195,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 50.5,
+          "end": 52.1,
+          "text": "ये वही रोटी थी",
+          "avg_logprob": -0.1571,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 52.1,
+          "end": 54.02,
+          "text": "जो गाहों के भूखे कुत्ते क",
+          "avg_logprob": -0.1571,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 54.02,
+          "end": 54.66,
+          "text": "लिये थ",
+          "avg_logprob": -0.1571,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 54.66,
+          "end": 56.06,
+          "text": "तूने अपनी लालच म",
+          "avg_logprob": -0.1571,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 56.06,
+          "end": 56.94,
+          "text": "मौका खो दिया",
+          "avg_logprob": -0.1571,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 56.06,
+          "end": 58.16,
+          "text": "मौका खो दिया, गप्पु पछताया",
+          "avg_logprob": -0.1288,
+          "window_start": 54.0,
+          "window_end": 64.81
+        },
+        {
+          "start": 58.16,
+          "end": 59.78,
+          "text": "लेकिन अப देर हो चुकी थ",
+          "avg_logprob": -0.1288,
+          "window_start": 54.0,
+          "window_end": 64.81
+        },
+        {
+          "start": 59.78,
+          "end": 62.09,
+          "text": "सीख, लالच का",
+          "avg_logprob": -0.1288,
+          "window_start": 54.0,
+          "window_end": 64.81
+        },
+        {
+          "start": 62.09,
+          "end": 64.13,
+          "text": "फल हमेशा नुखसान दायक",
+          "avg_logprob": -0.1288,
+          "window_start": 54.0,
+          "window_end": 64.81
+        },
+        {
+          "start": 64.13,
+          "end": 64.55,
+          "text": "होता ह",
+          "avg_logprob": -0.1288,
+          "window_start": 54.0,
+          "window_end": 64.81
+        }
+      ],
+      "raw_joined_from_segments": "एक दिन एग छोटे से गहाँ में गप्पू नाम का एर चुहा रहता था गल्बी बहुत चतुर, लेकिन बेहद लालची थी उसे हमेशा लगता थै कि उत्से और ज्यादा खाना चाहिए एंक सुबह उ स खेत मे घूमते हुय ए चमचमाती रोटी बहुत बड़ी और सुनहरी थी जैसे ही उसने उسे चूआ रोटी बोल उठी, मैं एक जादूय रौटि हूं, अगर तुम मुझे किसी जरूरत्मन्द को दोगे, तो तमें मनचाहा इनाम मिलेगा. गप्पू चोंक गया, लेकिन फिर बुला, अगर मैं ये खुद खा ल तो मुहे ही सबसे बड़ा इनाम मिलेगा वह रोटी को लेकर जैसे ही पहला तुकडा मूह मे डाला, रوटی गायब हो गए औड गत्पू का पेट दर्ध से بھर गیا, तभी फेडर पर बैटा एक तोता बोला ये वही रोटी थी जो गाहों के भूखे कुत्ते क लिये थ तूने अपनी लालच म मौका खो दिया मौका खो दिया, गप्पु पछताया लेकिन अப देर हो चुकी थ सीख, लالच का फल हमेशा नुखसान दायक होता ह",
+      "final_transcribe_all": "एक दिन एग छोटे से गहाँ में गप्पू नाम का एर चुहा रहता था गल्बी बहुत चतुर, लेकिन बेहद लालची थी उसे हमेशा लगता थै कि उत्से और ज्यादा खाना चाहिए एंक सुबह उ स खेत मे घूमते हुय ए चमचमाती रोटी बहुत बड़ी और सुनहरी थी जैसे ही उसने उسे चूआ रोटी बोल उठी, मैं एक जादूय रौटि हूं, अगर तुम मुझे किसी जरूरत्मन्द को दोगे, तो तमें मनचाहा इनाम मिलेगा. गप्पू चोंक गया, लेकिन फिर बुला, अगर मैं ये खुद खा ल तो मुहे ही सबसे बड़ा इनाम मिलेगा वह रोटी को लेकर जैसे ही पहला तुकडा मूह मे डाला, रوटی गायब हो गए औड गत्पू का पेट दर्ध से بھर गیا, तभी फेडर पर बैटा एक तोता बोला ये वही रोटी थी जो गाहों के भूखे कुत्ते क लिये थ तूने अपनी लालच म मौका खो दिया मौका खो दिया, गप्पु पछताया लेकिन अப देर हो चुकी थ सीख, लالच का फल हमेशा नुखसान दायक होता ह",
+      "possible_30s_window_cuts": [],
+      "replacement_char_count": 0
+    },
+    {
+      "id": "missing_night_hi",
+      "kind": "Hindi narration/drama snippet",
+      "path": "C:\\Users\\mathu\\OneDrive\\Desktop\\AI-Video-Assistant--main\\AI-Video-Assistant--main (3)\\AI-Video-Assistant--main (2)\\AI-Video-Assistant--main\\scratch\\missing_night_30s.wav",
+      "audio": {
+        "duration": 30.0,
+        "sample_rate": 16000,
+        "channels": 1
+      },
+      "validate": {
+        "duration": 30.0,
+        "sample_rate": 16000,
+        "channels": 1,
+        "rms": 0.16085149347782135
+      },
+      "num_chunks": 1,
+      "model": "large-v3",
+      "device": "cuda",
+      "compute": "int8_float16",
+      "transcribe_all_seconds": 26.14,
+      "transcribe_with_segments_seconds": 25.34,
+      "detected_language": "hi",
+      "num_segments": 20,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 2.1,
+          "text": "अपनी सांसे ही रोक लियों।",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 2.1,
+          "end": 3.64,
+          "text": "और इसी खामोशी में डूब",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 3.64,
+          "end": 4.9,
+          "text": "शहर के एक कोने मेn",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 4.9,
+          "end": 6.44,
+          "text": "एग घर था।",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 6.44,
+          "end": 8.44,
+          "text": "मतलब, बहार से देखने पर तो",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 8.44,
+          "end": 9.66,
+          "text": "सब कुछ ए",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 9.66,
+          "end": 11.72,
+          "text": "नॉर्मल, ए कदम शांत लग",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 11.72,
+          "end": 12.64,
+          "text": "रहा थa।",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 12.64,
+          "end": 13.72,
+          "text": "लेकिन, इज",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 13.72,
+          "end": 14.44,
+          "text": "ख़ामौषी क",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 14.44,
+          "end": 14.92,
+          "text": "पढ़दे क",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 14.92,
+          "end": 15.88,
+          "text": "पीछे कृच",
+          "avg_logprob": -0.2447,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 15.88,
+          "end": 17.76,
+          "text": "बहुत ही अजीब, कुछ",
+          "avg_logprob": -0.1383,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 17.76,
+          "end": 19.44,
+          "text": "बोहत हि गलत होने वाला था",
+          "avg_logprob": -0.1383,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 19.44,
+          "end": 21.16,
+          "text": "तो कहानी शुरू होती ह",
+          "avg_logprob": -0.1383,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 21.16,
+          "end": 23.8,
+          "text": "शहर के दो अलग-अलگ हिस्सों में।",
+          "avg_logprob": -0.1231,
+          "window_start": 18.0,
+          "window_end": 30.0
+        },
+        {
+          "start": 23.8,
+          "end": 25.06,
+          "text": "एक तरफ एख परिवार ह",
+          "avg_logprob": -0.1231,
+          "window_start": 18.0,
+          "window_end": 30.0
+        },
+        {
+          "start": 25.06,
+          "end": 27.2,
+          "text": "जो किसी का इंतजार कर रहा ह",
+          "avg_logprob": -0.1231,
+          "window_start": 18.0,
+          "window_end": 30.0
+        },
+        {
+          "start": 27.2,
+          "end": 28.32,
+          "text": "और दूसरी तרफ",
+          "avg_logprob": -0.1231,
+          "window_start": 18.0,
+          "window_end": 30.0
+        },
+        {
+          "start": 28.32,
+          "end": 29.68,
+          "text": "एह पत्रकार",
+          "avg_logprob": -0.1231,
+          "window_start": 18.0,
+          "window_end": 30.0
+        }
+      ],
+      "raw_joined_from_segments": "अपनी सांसे ही रोक लियों। और इसी खामोशी में डूब शहर के एक कोने मेn एग घर था। मतलब, बहार से देखने पर तो सब कुछ ए नॉर्मल, ए कदम शांत लग रहा थa। लेकिन, इज ख़ामौषी क पढ़दे क पीछे कृच बहुत ही अजीब, कुछ बोहत हि गलत होने वाला था तो कहानी शुरू होती ह शहर के दो अलग-अलگ हिस्सों में। एक तरफ एख परिवार ह जो किसी का इंतजार कर रहा ह और दूसरी तרफ एह पत्रकार",
+      "final_transcribe_all": "अपनी सांसे ही रोक लियों। और इसी खामोशी में डूब शहर के एक कोने मेn एग घर था। मतलब, बहार से देखने पर तो सब कुछ ए नॉर्मल, ए कदम शांत लग रहा थa। लेकिन, इज ख़ामौषी क पढ़दे क पीछे कृच बहुत ही अजीब, कुछ बोहत हि गलत होने वाला था तो कहानी शुरू होती ह शहर के दो अलग-अलگ हिस्सों में। एक तरफ एख परिवार ह जो किसी का इंतजार कर रहा ह और दूसरी तרफ एह पत्रकार",
+      "possible_30s_window_cuts": [],
+      "replacement_char_count": 0
+    },
+    {
+      "id": "hinglish_chapters",
+      "kind": "Hindi mixed with English technical terms",
+      "path": "C:\\Users\\mathu\\OneDrive\\Desktop\\AI-Video-Assistant--main\\AI-Video-Assistant--main (3)\\AI-Video-Assistant--main (2)\\AI-Video-Assistant--main\\scratch\\test_android_rPvJ7FKqWy4.wav",
+      "audio": {
+        "duration": 237.44725,
+        "sample_rate": 16000,
+        "channels": 1
+      },
+      "validate": {
+        "duration": 237.44725,
+        "sample_rate": 16000,
+        "channels": 1,
+        "rms": 0.12038391828536987
+      },
+      "num_chunks": 1,
+      "model": "large-v3",
+      "device": "cuda",
+      "compute": "int8_float16",
+      "transcribe_all_seconds": 214.07,
+      "transcribe_with_segments_seconds": 207.05,
+      "detected_language": "hi",
+      "num_segments": 76,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.0,
+          "text": "गाइस आजकल आ लोगोंने देखा होँगी कि सारे YouTube अपनी YouTube वीडियो में chapters को add करते हैं, timestamp को",
+          "avg_logprob": -0.3169,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 5.0,
+          "end": 10.0,
+          "text": "add कृते मतलब वो लॉक बताते थे कि उनकी विड्योमें कौन से part मे वह लाओग ने क्या चीज explain किया ह",
+          "avg_logprob": -0.3169,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 10.0,
+          "end": 13.0,
+          "text": "तो ये चिज बहुत जाधा important हुई चुकी है YouTube पे अर्भ क्विकी",
+          "avg_logprob": -0.3169,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 13.0,
+          "end": 17.32,
+          "text": "कि अगर आप लोग खुद अतनी YouTube वीडियो में चैप्टर्स को ऐड नहीं करोए टाइम स्थैंप है निकलो",
+          "avg_logprob": -0.434,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 17.32,
+          "end": 20.32,
+          "text": "किया तो कुंछ टैम बाद YouTube फूज आती विड्योस पर ऑटोमेटिक लिए",
+          "avg_logprob": -0.434,
+          "window_start": 0.0,
+          "window_end": 24.0
+        },
+        {
+          "start": 22.86,
+          "end": 27.48,
+          "text": "लग दैग्ञा और अगर वह YouTube फूज ऑटमेटिकली करेंगे आ विडीओ पे तो थोड़े से अ जीब स",
+          "avg_logprob": -0.3808,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 27.48,
+          "end": 30.9,
+          "text": "से बना सकता है अजीव-अझीप टाइम पर जो कि शायद आपको भी पसंद हुआ है कि",
+          "avg_logprob": -0.4061,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 30.9,
+          "end": 33.78,
+          "text": "यह टैम फ्लेड क्यों टेंग्स में बढ़ाएं तंबे चैप्टर्स बंधा हूं और",
+          "avg_logprob": -0.4061,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 33.78,
+          "end": 36.54,
+          "text": "ये नाम से क्लिक चेपटेर बाना हो तो बैठर या ही होगा कि",
+          "avg_logprob": -0.4061,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 36.54,
+          "end": 38.6,
+          "text": "लोग खुद अपनी हर videos में chapters को add",
+          "avg_logprob": -0.1141,
+          "window_start": 18.0,
+          "window_end": 42.0
+        },
+        {
+          "start": 41.16,
+          "end": 49.32,
+          "text": "शायद से थोड़ी सहायता हो सकती है कुंछ लोबा तो अलग यह सवाल है जिसमें सब्सक्राइब कर",
+          "avg_logprob": -0.2866,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 49.32,
+          "end": 52.22,
+          "text": "तो आज के इस वीडियो में मैं आ लोगों को यही बता हूँगा कि ये काम बहुत आसान ह",
+          "avg_logprob": -0.3096,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 52.22,
+          "end": 53.06,
+          "text": "और कैसे करना ह",
+          "avg_logprob": -0.3096,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 53.06,
+          "end": 54.36,
+          "text": "आलोप जैसा भी कर्ना सकते हो",
+          "avg_logprob": -0.3096,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 54.0,
+          "end": 68.1,
+          "text": "सब्सक्राइब करना तो चलिए शुरू करते हैं मैं आप लोग कैसे अपनी वीडियो में चैप्टर को",
+          "avg_logprob": -0.2903,
+          "window_start": 54.0,
+          "window_end": 78.0
+        },
+        {
+          "start": 54.36,
+          "end": 55.84,
+          "text": "PC से कटना कर सके ह",
+          "avg_logprob": -0.3096,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 55.84,
+          "end": 56.26,
+          "text": "मॉबाईल स",
+          "avg_logprob": -0.3096,
+          "window_start": 36.0,
+          "window_end": 60.0
+        },
+        {
+          "start": 68.1,
+          "end": 69.9,
+          "text": "कर सकते हो टाइम स्टैंस को ऐड कर",
+          "avg_logprob": -0.2929,
+          "window_start": 54.0,
+          "window_end": 78.0
+        },
+        {
+          "start": 69.9,
+          "end": 71.7,
+          "text": "सके तो आप लोगों जो भी वीडियो म",
+          "avg_logprob": -0.2929,
+          "window_start": 54.0,
+          "window_end": 78.0
+        },
+        {
+          "start": 71.7,
+          "end": 73.08,
+          "text": "टैन स्लैम एड़ करना है चैप्ठर्स",
+          "avg_logprob": -0.2929,
+          "window_start": 54.0,
+          "window_end": 78.0
+        },
+        {
+          "start": 72.0,
+          "end": 81.6,
+          "text": "सबसे पहले वीडियो को एक बार देखो और आपने कौन से-कौं से duration पर क्या चीज है तो अभी आ लोग",
+          "avg_logprob": -0.3035,
+          "window_start": 72.0,
+          "window_end": 96.0
+        },
+        {
+          "start": 73.08,
+          "end": 73.34,
+          "text": "एंड",
+          "avg_logprob": -0.2929,
+          "window_start": 54.0,
+          "window_end": 78.0
+        },
+        {
+          "start": 73.34,
+          "end": 74.52,
+          "text": "कर नहीं सबसे पहले वह विडीयो",
+          "avg_logprob": -0.2929,
+          "window_start": 54.0,
+          "window_end": 78.0
+        },
+        {
+          "start": 81.6,
+          "end": 85.32,
+          "text": "सकते हो कि मैंने अपना वीडियो में नोट करके रखा है यह मेरे वह विड्यू के लिए जो मैन",
+          "avg_logprob": -0.3464,
+          "window_start": 72.0,
+          "window_end": 96.0
+        },
+        {
+          "start": 85.32,
+          "end": 89.28,
+          "text": "लास्ट व्याद चैनल पर उपलोड किया इसमें मैसेज ऐड नहीं कि आधी तक तो इन्ह",
+          "avg_logprob": -0.3464,
+          "window_start": 72.0,
+          "window_end": 96.0
+        },
+        {
+          "start": 89.28,
+          "end": 91.56,
+          "text": "टाइम्सटैंप एड़ करने से जा रहा हूं अ भी फिर तौम मैणे उसक",
+          "avg_logprob": -0.3464,
+          "window_start": 72.0,
+          "window_end": 96.0
+        },
+        {
+          "start": 91.56,
+          "end": 93.1,
+          "text": "note करके रखा है कि मैंने वो वीडियो म",
+          "avg_logprob": -0.113,
+          "window_start": 72.0,
+          "window_end": 96.0
+        },
+        {
+          "start": 93.82,
+          "end": 95.56,
+          "text": "पे क्या चीज़ बताया हे, यहा",
+          "avg_logprob": -0.3047,
+          "window_start": 90.0,
+          "window_end": 114.0
+        },
+        {
+          "start": 95.56,
+          "end": 97.5,
+          "text": "पर आप लोग देख सकतो, इहां पह simply आ पको",
+          "avg_logprob": -0.3047,
+          "window_start": 90.0,
+          "window_end": 114.0
+        },
+        {
+          "start": 97.5,
+          "end": 99.5,
+          "text": "ऐसे-ऐसा यापे note कारना हाई",
+          "avg_logprob": -0.3047,
+          "window_start": 90.0,
+          "window_end": 114.0
+        },
+        {
+          "start": 99.5,
+          "end": 101.24,
+          "text": "यापर time लीखना पैले आम लओगो को",
+          "avg_logprob": -0.3047,
+          "window_start": 90.0,
+          "window_end": 114.0
+        },
+        {
+          "start": 101.24,
+          "end": 106.16,
+          "text": "0000 मतलब वीडियो के स्टार्थिंग मैने इंट्रो दिया है उसके बाद 1 मिनट 10 सेकंड यहां पर मैंन",
+          "avg_logprob": -0.2833,
+          "window_start": 90.0,
+          "window_end": 114.0
+        },
+        {
+          "start": 106.16,
+          "end": 109.82,
+          "text": "लिख कर रखा हूं एक मिणट दस सेशन बढ़ मैम है हाउ टू डूस एफ्प्लेन किय ह",
+          "avg_logprob": -0.2833,
+          "window_start": 90.0,
+          "window_end": 114.0
+        },
+        {
+          "start": 109.82,
+          "end": 111.62,
+          "text": "तो कुछ ऐसे आपको एक notepad म",
+          "avg_logprob": -0.0579,
+          "window_start": 90.0,
+          "window_end": 114.0
+        },
+        {
+          "start": 113.16,
+          "end": 117.66,
+          "text": "है, अपनी video को देखते है कि आ पने कहां पे क्या explain की है? करलिये ये सारे chapters",
+          "avg_logprob": -0.3011,
+          "window_start": 108.0,
+          "window_end": 132.0
+        },
+        {
+          "start": 117.66,
+          "end": 121.44,
+          "text": "की heading हो गई मतलब title होगया. तौ यह चीज खाली हमने notepads मे नोट किए और इसको",
+          "avg_logprob": -0.3011,
+          "window_start": 108.0,
+          "window_end": 132.0
+        },
+        {
+          "start": 121.44,
+          "end": 126.72,
+          "text": "तो हमने यहां से कॉपी कर लिया या से सिम्पली इसको आप कौफी गर दो कुछ अब उसके बाद जब",
+          "avg_logprob": -0.3961,
+          "window_start": 108.0,
+          "window_end": 132.0
+        },
+        {
+          "start": 129.88,
+          "end": 134.16,
+          "text": "चुके हो ठीक है यह तो अ प्लोस करें तथा उपलोर्ड कर सकते हूं जाओ सीधे मुद्यों म",
+          "avg_logprob": -0.3842,
+          "window_start": 126.0,
+          "window_end": 150.0
+        },
+        {
+          "start": 134.16,
+          "end": 138.04,
+          "text": "उस विड्या कि आ पर आंखों से description को ऑप्शन करो यदि description open कर",
+          "avg_logprob": -0.3842,
+          "window_start": 126.0,
+          "window_end": 150.0
+        },
+        {
+          "start": 138.04,
+          "end": 142.3,
+          "text": "करता हूं तो इस वीडियो के मेरी यह description है ठीक है मैंने description को open कर लिया",
+          "avg_logprob": -0.2457,
+          "window_start": 126.0,
+          "window_end": 150.0
+        },
+        {
+          "start": 142.3,
+          "end": 146.86,
+          "text": "अब इज description में आप लोग कहीं पर भी वह चीज जो नोटपैट से copy कि उसको पेस्ट",
+          "avg_logprob": -0.2457,
+          "window_start": 126.0,
+          "window_end": 150.0
+        },
+        {
+          "start": 144.0,
+          "end": 156.42,
+          "text": "तो यहां पर मैं वीडियो के एंड्रिंग में युद्ध इसको पेस्ट कर दूंढ आप लोग प्लेस कर",
+          "avg_logprob": -0.4603,
+          "window_start": 144.0,
+          "window_end": 168.0
+        },
+        {
+          "start": 156.42,
+          "end": 158.34,
+          "text": "मैंने वहाँ से कॉपी किया था तो यहां पर आ गया",
+          "avg_logprob": -0.269,
+          "window_start": 144.0,
+          "window_end": 168.0
+        },
+        {
+          "start": 158.34,
+          "end": 160.42,
+          "text": "0 minute 0 second पे मैने intro",
+          "avg_logprob": -0.269,
+          "window_start": 144.0,
+          "window_end": 168.0
+        },
+        {
+          "start": 160.42,
+          "end": 161.92,
+          "text": "बताया है उसके बाद मैमेन",
+          "avg_logprob": -0.269,
+          "window_start": 144.0,
+          "window_end": 168.0
+        },
+        {
+          "start": 161.92,
+          "end": 163.94,
+          "text": "यापे नीचे भताए है how to do this",
+          "avg_logprob": -0.269,
+          "window_start": 144.0,
+          "window_end": 168.0
+        },
+        {
+          "start": 163.94,
+          "end": 165.88,
+          "text": "उسकेबात मैले इंच्य बटाये 1 minute 49",
+          "avg_logprob": -0.269,
+          "window_start": 144.0,
+          "window_end": 168.0
+        },
+        {
+          "start": 163.98,
+          "end": 166.44,
+          "text": "उसके पाद मैंने निच्छे भता आया 1 minute 49 second प",
+          "avg_logprob": -0.2354,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 166.44,
+          "end": 168.1,
+          "text": "How is this use of backup URL?",
+          "avg_logprob": -0.2354,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 168.18,
+          "end": 170.72,
+          "text": "ये मैने सी जल्दी-जलदि में title decide कर लिया ताकि",
+          "avg_logprob": -0.2354,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 170.72,
+          "end": 171.98,
+          "text": "मैn आप लोगों के लीव विडियो बना पौँँ.",
+          "avg_logprob": -0.2354,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 172.2,
+          "end": 174.3,
+          "text": "ठीक है, तो ऐसे अपने description मे एड़ करदィया,",
+          "avg_logprob": -0.2354,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 174.3,
+          "end": 175.92,
+          "text": "बस इतना करने के बाद आप back करो",
+          "avg_logprob": -0.2439,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 175.92,
+          "end": 177.54,
+          "text": "और अपने description को save कर दो",
+          "avg_logprob": -0.2439,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 177.54,
+          "end": 178.16,
+          "text": "सिंपल",
+          "avg_logprob": -0.2439,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 178.16,
+          "end": 179.34,
+          "text": "इتना کرने کے बढ",
+          "avg_logprob": -0.2439,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 179.34,
+          "end": 181.46,
+          "text": "आके video में automatically chapters जो ह",
+          "avg_logprob": -0.2439,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 181.46,
+          "end": 182.46,
+          "text": "वो generate हो जाएंग",
+          "avg_logprob": -0.2439,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 182.46,
+          "end": 183.5,
+          "text": "अ पनी आ चैप्टर जुए",
+          "avg_logprob": -0.2439,
+          "window_start": 162.0,
+          "window_end": 186.0
+        },
+        {
+          "start": 185.4,
+          "end": 191.24,
+          "text": "दिया है को टैम पर एक-एक डिविजियन चाफ्थर झाय ताईम स्पेंस यह ऐड मुझे बस इतना सिंपल ह",
+          "avg_logprob": -0.4531,
+          "window_start": 180.0,
+          "window_end": 204.0
+        },
+        {
+          "start": 191.24,
+          "end": 195.32,
+          "text": "डिस्क्रिप्शन में आप लोगों काली वह टाइम एड करना है बट इतना ध्यान दो टॉइन जैसे मैंन",
+          "avg_logprob": -0.3328,
+          "window_start": 180.0,
+          "window_end": 204.0
+        },
+        {
+          "start": 195.32,
+          "end": 200.3,
+          "text": "ऐड हैं वैसी ऐसी सेट कर ना पहले अपनों 00 लिखो उसका कोलन तो इसके बाद फिर सेकंड रुख",
+          "avg_logprob": -0.3328,
+          "window_start": 180.0,
+          "window_end": 204.0
+        },
+        {
+          "start": 200.24,
+          "end": 202.0,
+          "text": "तो colon देना ज़रूरी है, वो colon",
+          "avg_logprob": -0.2365,
+          "window_start": 198.0,
+          "window_end": 222.0
+        },
+        {
+          "start": 202.0,
+          "end": 204.06,
+          "text": "जरुर दैना, और उत्से भीच में space मत दयना time म",
+          "avg_logprob": -0.2365,
+          "window_start": 198.0,
+          "window_end": 222.0
+        },
+        {
+          "start": 204.06,
+          "end": 205.5,
+          "text": "ठीक है? तु एक बढ़ ध्यान से दिख लो,",
+          "avg_logprob": -0.2365,
+          "window_start": 198.0,
+          "window_end": 222.0
+        },
+        {
+          "start": 205.58,
+          "end": 206.6,
+          "text": "अगर आपको नहीं समझ मे आया थो,",
+          "avg_logprob": -0.2365,
+          "window_start": 198.0,
+          "window_end": 222.0
+        },
+        {
+          "start": 206.6,
+          "end": 207.92,
+          "text": "वह मैंने कैसे notepad म",
+          "avg_logprob": -0.2365,
+          "window_start": 198.0,
+          "window_end": 222.0
+        },
+        {
+          "start": 207.92,
+          "end": 209.38,
+          "text": "लिग़ा है. बस वैसी notepAD म",
+          "avg_logprob": -0.2365,
+          "window_start": 198.0,
+          "window_end": 222.0
+        },
+        {
+          "start": 209.38,
+          "end": 211.28,
+          "text": "लिखके आप लोगों को अपने वीडियो के description म",
+          "avg_logprob": -0.3033,
+          "window_start": 198.0,
+          "window_end": 222.0
+        },
+        {
+          "start": 211.28,
+          "end": 212.76,
+          "text": "paste कर देना है और save करते ह",
+          "avg_logprob": -0.3033,
+          "window_start": 198.0,
+          "window_end": 222.0
+        },
+        {
+          "start": 212.76,
+          "end": 214.78,
+          "text": "आत्मा टाइम स्टैंप्स चैपटर बनक",
+          "avg_logprob": -0.3033,
+          "window_start": 198.0,
+          "window_end": 222.0
+        },
+        {
+          "start": 214.78,
+          "end": 216.54,
+          "text": "तैयार हो जाएगा तो उम्हीद कर्ता हूँ आ लौग",
+          "avg_logprob": -0.3033,
+          "window_start": 198.0,
+          "window_end": 222.0
+        },
+        {
+          "start": 216.54,
+          "end": 218.2,
+          "text": "यह विड़ियو दिएके सीख चुके होँगे जिसको नहीं आ",
+          "avg_logprob": -0.3033,
+          "window_start": 198.0,
+          "window_end": 222.0
+        },
+        {
+          "start": 219.58,
+          "end": 221.56,
+          "text": "एड करنا. तो विड़ियو अगर पसंद रही थे और",
+          "avg_logprob": -0.2571,
+          "window_start": 216.0,
+          "window_end": 237.45
+        },
+        {
+          "start": 221.56,
+          "end": 223.36,
+          "text": "वィड्यो को लाईक कर दो, छैनल को सब्सक्राब नी कर",
+          "avg_logprob": -0.2571,
+          "window_start": 216.0,
+          "window_end": 237.45
+        },
+        {
+          "start": 223.36,
+          "end": 228.96,
+          "text": "तब कि ले बाए-बा",
+          "avg_logprob": -0.2571,
+          "window_start": 216.0,
+          "window_end": 237.45
+        }
+      ],
+      "raw_joined_from_segments": "गाइस आजकल आ लोगोंने देखा होँगी कि सारे YouTube अपनी YouTube वीडियो में chapters को add करते हैं, timestamp को add कृते मतलब वो लॉक बताते थे कि उनकी विड्योमें कौन से part मे वह लाओग ने क्या चीज explain किया ह तो ये चिज बहुत जाधा important हुई चुकी है YouTube पे अर्भ क्विकी कि अगर आप लोग खुद अतनी YouTube वीडियो में चैप्टर्स को ऐड नहीं करोए टाइम स्थैंप है निकलो किया तो कुंछ टैम बाद YouTube फूज आती विड्योस पर ऑटोमेटिक लिए लग दैग्ञा और अगर वह YouTube फूज ऑटमेटिकली करेंगे आ विडीओ पे तो थोड़े से अ जीब स से बना सकता है अजीव-अझीप टाइम पर जो कि शायद आपको भी पसंद हुआ है कि यह टैम फ्लेड क्यों टेंग्स में बढ़ाएं तंबे चैप्टर्स बंधा हूं और ये नाम से क्लिक चेपटेर बाना हो तो बैठर या ही होगा कि लोग खुद अपनी हर videos में chapters को add शायद से थोड़ी सहायता हो सकती है कुंछ लोबा तो अलग यह सवाल है जिसमें सब्सक्राइब कर तो आज के इस वीडियो में मैं आ लोगों को यही बता हूँगा कि ये काम बहुत आसान ह और कैसे करना ह आलोप जैसा भी कर्ना सकते हो सब्सक्राइब करना तो चलिए शुरू करते हैं मैं आप लोग कैसे अपनी वीडियो में चैप्टर को PC से कटना कर सके ह मॉबाईल स कर सकते हो टाइम स्टैंस को ऐड कर सके तो आप लोगों जो भी वीडियो म टैन स्लैम एड़ करना है चैप्ठर्स सबसे पहले वीडियो को एक बार देखो और आपने कौन से-कौं से duration पर क्या चीज है तो अभी आ लोग एंड कर नहीं सबसे पहले वह विडीयो सकते हो कि मैंने अपना वीडियो में नोट करके रखा है यह मेरे वह विड्यू के लिए जो मैन लास्ट व्याद चैनल पर उपलोड किया इसमें मैसेज ऐड नहीं कि आधी तक तो इन्ह टाइम्सटैंप एड़ करने से जा रहा हूं अ भी फिर तौम मैणे उसक note करके रखा है कि मैंने वो वीडियो म पे क्या चीज़ बताया हे, यहा पर आप लोग देख सकतो, इहां पह simply आ पको ऐसे-ऐसा यापे note कारना हाई यापर time लीखना पैले आम लओगो को 0000 मतलब वीडियो के स्टार्थिंग मैने इंट्रो दिया है उसके बाद 1 मिनट 10 सेकंड यहां पर मैंन लिख कर रखा हूं एक मिणट दस सेशन बढ़ मैम है हाउ टू डूस एफ्प्लेन किय ह तो कुछ ऐसे आपको एक notepad म है, अपनी video को देखते है कि आ पने कहां पे क्या explain की है? करलिये ये सारे chapters की heading हो गई मतलब title होगया. तौ यह चीज खाली हमने notepads मे नोट किए और इसको तो हमने यहां से कॉपी कर लिया या से सिम्पली इसको आप कौफी गर दो कुछ अब उसके बाद जब चुके हो ठीक है यह तो अ प्लोस करें तथा उपलोर्ड कर सकते हूं जाओ सीधे मुद्यों म उस विड्या कि आ पर आंखों से description को ऑप्शन करो यदि description open कर करता हूं तो इस वीडियो के मेरी यह description है ठीक है मैंने description को open कर लिया अब इज description में आप लोग कहीं पर भी वह चीज जो नोटपैट से copy कि उसको पेस्ट तो यहां पर मैं वीडियो के एंड्रिंग में युद्ध इसको पेस्ट कर दूंढ आप लोग प्लेस कर मैंने वहाँ से कॉपी किया था तो यहां पर आ गया 0 minute 0 second पे मैने intro बताया है उसके बाद मैमेन यापे नीचे भताए है how to do this उسकेबात मैले इंच्य बटाये 1 minute 49 उसके पाद मैंने निच्छे भता आया 1 minute 49 second प How is this use of backup URL? ये मैने सी जल्दी-जलदि में title decide कर लिया ताकि मैn आप लोगों के लीव विडियो बना पौँँ. ठीक है, तो ऐसे अपने description मे एड़ करदィया, बस इतना करने के बाद आप back करो और अपने description को save कर दो सिंपल इتना کرने کے बढ आके video में automatically chapters जो ह वो generate हो जाएंग अ पनी आ चैप्टर जुए दिया है को टैम पर एक-एक डिविजियन चाफ्थर झाय ताईम स्पेंस यह ऐड मुझे बस इतना सिंपल ह डिस्क्रिप्शन में आप लोगों काली वह टाइम एड करना है बट इतना ध्यान दो टॉइन जैसे मैंन ऐड हैं वैसी ऐसी सेट कर ना पहले अपनों 00 लिखो उसका कोलन तो इसके बाद फिर सेकंड रुख तो colon देना ज़रूरी है, वो colon जरुर दैना, और उत्से भीच में space मत दयना time म ठीक है? तु एक बढ़ ध्यान से दिख लो, अगर आपको नहीं समझ मे आया थो, वह मैंने कैसे notepad म लिग़ा है. बस वैसी notepAD म लिखके आप लोगों को अपने वीडियो के description म paste कर देना है और save करते ह आत्मा टाइम स्टैंप्स चैपटर बनक तैयार हो जाएगा तो उम्हीद कर्ता हूँ आ लौग यह विड़ियو दिएके सीख चुके होँगे जिसको नहीं आ एड करنا. तो विड़ियو अगर पसंद रही थे और वィड्यो को लाईक कर दो, छैनल को सब्सक्राब नी कर तब कि ले बाए-बा",
+      "final_transcribe_all": "गाइस आजकल आ लोगोंने देखा होँगी कि सारे YouTube अपनी YouTube वीडियो में chapters को add करते हैं, timestamp को add कृते मतलब वो लॉक बताते थे कि उनकी विड्योमें कौन से part मे वह लाओग ने क्या चीज explain किया ह तो ये चिज बहुत जाधा important हुई चुकी है YouTube पे अर्भ क्विकी कि अगर आप लोग खुद अतनी YouTube वीडियो में चैप्टर्स को ऐड नहीं करोए टाइम स्थैंप है निकलो किया तो कुंछ टैम बाद YouTube फूज आती विड्योस पर ऑटोमेटिक लिए लग दैग्ञा और अगर वह YouTube फूज ऑटमेटिकली करेंगे आ विडीओ पे तो थोड़े से अ जीब स से बना सकता है अजीव-अझीप टाइम पर जो कि शायद आपको भी पसंद हुआ है कि यह टैम फ्लेड क्यों टेंग्स में बढ़ाएं तंबे चैप्टर्स बंधा हूं और ये नाम से क्लिक चेपटेर बाना हो तो बैठर या ही होगा कि लोग खुद अपनी हर videos में chapters को add शायद से थोड़ी सहायता हो सकती है कुंछ लोबा तो अलग यह सवाल है जिसमें सब्सक्राइब कर तो आज के इस वीडियो में मैं आ लोगों को यही बता हूँगा कि ये काम बहुत आसान ह और कैसे करना ह आलोप जैसा भी कर्ना सकते हो सब्सक्राइब करना तो चलिए शुरू करते हैं मैं आप लोग कैसे अपनी वीडियो में चैप्टर को PC से कटना कर सके ह मॉबाईल स कर सकते हो टाइम स्टैंस को ऐड कर सके तो आप लोगों जो भी वीडियो म टैन स्लैम एड़ करना है चैप्ठर्स सबसे पहले वीडियो को एक बार देखो और आपने कौन से-कौं से duration पर क्या चीज है तो अभी आ लोग एंड कर नहीं सबसे पहले वह विडीयो सकते हो कि मैंने अपना वीडियो में नोट करके रखा है यह मेरे वह विड्यू के लिए जो मैन लास्ट व्याद चैनल पर उपलोड किया इसमें मैसेज ऐड नहीं कि आधी तक तो इन्ह टाइम्सटैंप एड़ करने से जा रहा हूं अ भी फिर तौम मैणे उसक note करके रखा है कि मैंने वो वीडियो म पे क्या चीज़ बताया हे, यहा पर आप लोग देख सकतो, इहां पह simply आ पको ऐसे-ऐसा यापे note कारना हाई यापर time लीखना पैले आम लओगो को 0000 मतलब वीडियो के स्टार्थिंग मैने इंट्रो दिया है उसके बाद 1 मिनट 10 सेकंड यहां पर मैंन लिख कर रखा हूं एक मिणट दस सेशन बढ़ मैम है हाउ टू डूस एफ्प्लेन किय ह तो कुछ ऐसे आपको एक notepad म है, अपनी video को देखते है कि आ पने कहां पे क्या explain की है? करलिये ये सारे chapters की heading हो गई मतलब title होगया. तौ यह चीज खाली हमने notepads मे नोट किए और इसको तो हमने यहां से कॉपी कर लिया या से सिम्पली इसको आप कौफी गर दो कुछ अब उसके बाद जब चुके हो ठीक है यह तो अ प्लोस करें तथा उपलोर्ड कर सकते हूं जाओ सीधे मुद्यों म उस विड्या कि आ पर आंखों से description को ऑप्शन करो यदि description open कर करता हूं तो इस वीडियो के मेरी यह description है ठीक है मैंने description को open कर लिया अब इज description में आप लोग कहीं पर भी वह चीज जो नोटपैट से copy कि उसको पेस्ट तो यहां पर मैं वीडियो के एंड्रिंग में युद्ध इसको पेस्ट कर दूंढ आप लोग प्लेस कर मैंने वहाँ से कॉपी किया था तो यहां पर आ गया 0 minute 0 second पे मैने intro बताया है उसके बाद मैमेन यापे नीचे भताए है how to do this उسकेबात मैले इंच्य बटाये 1 minute 49 उसके पाद मैंने निच्छे भता आया 1 minute 49 second प How is this use of backup URL? ये मैने सी जल्दी-जलदि में title decide कर लिया ताकि मैn आप लोगों के लीव विडियो बना पौँँ. ठीक है, तो ऐसे अपने description मे एड़ करदィया, बस इतना करने के बाद आप back करो और अपने description को save कर दो सिंपल इتना کرने کے बढ आके video में automatically chapters जो ह वो generate हो जाएंग अ पनी आ चैप्टर जुए दिया है को टैम पर एक-एक डिविजियन चाफ्थर झाय ताईम स्पेंस यह ऐड मुझे बस इतना सिंपल ह डिस्क्रिप्शन में आप लोगों काली वह टाइम एड करना है बट इतना ध्यान दो टॉइन जैसे मैंन ऐड हैं वैसी ऐसी सेट कर ना पहले अपनों 00 लिखो उसका कोलन तो इसके बाद फिर सेकंड रुख तो colon देना ज़रूरी है, वो colon जरुर दैना, और उत्से भीच में space मत दयना time म ठीक है? तु एक बढ़ ध्यान से दिख लो, अगर आपको नहीं समझ मे आया थो, वह मैंने कैसे notepad म लिग़ा है. बस वैसी notepAD म लिखके आप लोगों को अपने वीडियो के description म paste कर देना है और save करते ह आत्मा टाइम स्टैंप्स चैपटर बनक तैयार हो जाएगा तो उम्हीद कर्ता हूँ आ लौग यह विड़ियو दिएके सीख चुके होँगे जिसको नहीं आ एड करنا. तो विड़ियو अगर पसंद रही थे और वィड्यो को लाईक कर दो, छैनल को सब्सक्राब नी कर तब कि ले बाए-बा",
+      "possible_30s_window_cuts": [],
+      "replacement_char_count": 0
+    },
+    {
+      "id": "english_sample",
+      "kind": "English regression",
+      "path": "C:\\Users\\mathu\\OneDrive\\Desktop\\AI-Video-Assistant--main\\AI-Video-Assistant--main (3)\\AI-Video-Assistant--main (2)\\AI-Video-Assistant--main\\scratch\\speech_sample_16k.wav",
+      "audio": {
+        "duration": 17.935875,
+        "sample_rate": 16000,
+        "channels": 1
+      },
+      "validate": {
+        "duration": 17.935875,
+        "sample_rate": 16000,
+        "channels": 1,
+        "rms": 0.09564314782619476
+      },
+      "num_chunks": 1,
+      "model": "large-v3",
+      "device": "cuda",
+      "compute": "int8_float16",
+      "transcribe_all_seconds": 5.19,
+      "transcribe_with_segments_seconds": 5.38,
+      "detected_language": "en",
+      "num_segments": 3,
+      "segments": [
+        {
+          "start": 0.0,
+          "end": 5.76,
+          "text": "hello team welcome to the weekly engineering review sarah announced that the new payment",
+          "avg_logprob": -0.1514,
+          "window_start": 0.0,
+          "window_end": 17.94
+        },
+        {
+          "start": 5.76,
+          "end": 11.79,
+          "text": "system is ready for launch next tuesday michael will lead load testing and performance benchmarks",
+          "avg_logprob": -0.1514,
+          "window_start": 0.0,
+          "window_end": 17.94
+        },
+        {
+          "start": 11.79,
+          "end": 17.02,
+          "text": "the leadership team decided to adopt local ai processing to guarantee privacy",
+          "avg_logprob": -0.1514,
+          "window_start": 0.0,
+          "window_end": 17.94
+        }
+      ],
+      "raw_joined_from_segments": "hello team welcome to the weekly engineering review sarah announced that the new payment system is ready for launch next tuesday michael will lead load testing and performance benchmarks the leadership team decided to adopt local ai processing to guarantee privacy",
+      "final_transcribe_all": "hello team welcome to the weekly engineering review sarah announced that the new payment system is ready for launch next tuesday michael will lead load testing and performance benchmarks the leadership team decided to adopt local ai processing to guarantee privacy",
+      "possible_30s_window_cuts": [],
+      "replacement_char_count": 0
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "question": "What is visible at 5:00?",
+    "target_seconds": 300,
+    "active_intervals": [
+      [
+        289.0,
+        313.0,
+        "00:04:49 to 00:05:13"
+      ]
+    ],
+    "candidate_prompt": [
+      {
+        "role": "system",
+        "content": "Answer the user's question using only the supplied visual observations. When a question broadly asks what is visible or happening, summarize the described frame: use its scene, people, actions, objects, and important-details observations. Do not treat a broad question as asking for one specific detail. If one requested detail is absent, say that detail is unknown, then state any relevant details that are present. Do not claim that no visual evidence exists when observations are supplied, and do not add outside facts.\n\nRequested moment: 05:00. The retrieved visual record is active during 00:04:49 to 00:05:13 to 05:13; its start time may precede the requested moment.\n\nRetrieved visual observations:\n\n\n--- [VISUAL EVIDENCE (OBSERVED VIDEO FRAMES)] ---\n\n[Visual Evidence 1 at 00:04:49 to 00:05:13]\nVideo ID: YouTube URL::yaS7O6FQEkc\n[VISUAL EVIDENCE at 00:04:49 (Screen active 00:04:49 to 00:05:13)]\nScene: Indoor setting with blurred background elements, likely an office or studio environment.\nScreen/UI: \"F\" logo in top right corner\nSlide/Title: None\nCharts: None\nDiagrams: None\nVisible Text: \"F\" logo (top right corner\nPeople: 1 (a woman\nActions: Holding a microphone, likely speaking or being interviewed\nObjects: White electric kettle, microphone, blurred background elements (signboards, posters\nImportant Visual Details: Woman with gray hair, purple glasses on head, wearing dark blue patterned top; background blurred with dark and light elements; white electric kettle on left side."
+      },
+      {
+        "role": "user",
+        "content": "What is visible at 5:00?"
+      }
+    ],
+    "raw_response": "At 5:00, the visual record shows an indoor setting with a blurred background, likely an office or studio environment. A woman with gray hair and purple glasses on her head is visible, wearing a dark blue patterned top. She is holding a microphone, likely speaking or being interviewed. A white electric kettle is placed on the left side of the frame. The \"F\" logo is displayed in the top right corner of the screen. There are no charts, diagrams, or slide titles visible. The background includes blurred dark and light elements, possibly signboards or posters."
+  },
+  {
+    "question": "What is happening visually at 5:06?",
+    "target_seconds": 306,
+    "active_intervals": [
+      [
+        289.0,
+        313.0,
+        "00:04:49 to 00:05:13"
+      ]
+    ],
+    "candidate_prompt": [
+      {
+        "role": "system",
+        "content": "Answer the user's question using only the supplied visual observations. When a question broadly asks what is visible or happening, summarize the described frame: use its scene, people, actions, objects, and important-details observations. Do not treat a broad question as asking for one specific detail. If one requested detail is absent, say that detail is unknown, then state any relevant details that are present. Do not claim that no visual evidence exists when observations are supplied, and do not add outside facts.\n\nRequested moment: 05:06. The retrieved visual record is active during 00:04:49 to 00:05:13 to 05:13; its start time may precede the requested moment.\n\nRetrieved visual observations:\n\n\n--- [VISUAL EVIDENCE (OBSERVED VIDEO FRAMES)] ---\n\n[Visual Evidence 1 at 00:04:49 to 00:05:13]\nVideo ID: YouTube URL::yaS7O6FQEkc\n[VISUAL EVIDENCE at 00:04:49 (Screen active 00:04:49 to 00:05:13)]\nScene: Indoor setting with blurred background elements, likely an office or studio environment.\nScreen/UI: \"F\" logo in top right corner\nSlide/Title: None\nCharts: None\nDiagrams: None\nVisible Text: \"F\" logo (top right corner\nPeople: 1 (a woman\nActions: Holding a microphone, likely speaking or being interviewed\nObjects: White electric kettle, microphone, blurred background elements (signboards, posters\nImportant Visual Details: Woman with gray hair, purple glasses on head, wearing dark blue patterned top; background blurred with dark and light elements; white electric kettle on left side."
+      },
+      {
+        "role": "user",
+        "content": "What is happening visually at 5:06?"
+      }
+    ],
+    "raw_response": "At 5:06, the visual evidence shows an indoor setting with a blurred background, likely an office or studio environment. A woman with gray hair and purple glasses on her head is holding a microphone, likely speaking or being interviewed. She is wearing a dark blue patterned top. On the left side of the frame, there is a white electric kettle. The \"F\" logo is visible in the top right corner of the screen. There are no charts, diagrams, or slide titles visible. The background includes blurred dark and light elements, possibly signboards or posters."
+  }
+]

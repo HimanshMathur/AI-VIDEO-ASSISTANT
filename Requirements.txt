@@ -1,0 +1,55 @@
+# ── AI Video Assistant ── Requirements.txt ──────────────────────────────────
+# 100% Local & Privacy-First Architecture (Zero Cloud Dependencies)
+# Tested on Python 3.13 / Windows 11 (also compatible with Python 3.10-3.12)
+#
+# INSTALL:
+#   python -m venv .venv
+#   .venv\Scripts\activate
+#   python -m pip install --upgrade pip
+#   pip install -r Requirements.txt
+
+# ── Audio / Video Acquisition ─────────────────────────────────────────────────
+yt-dlp>=2024.4.9                  # Download audio from YouTube URLs
+pydub>=0.25.1                     # Audio chunking (uses FFmpeg binary on PATH)
+audioop-lts>=0.2.2; python_version >= "3.13"  # Python 3.13 removed audioop, which pydub imports
+# NOTE: FFmpeg itself must be installed separately on PATH (not via pip).
+#   Windows: winget install Gyan.FFmpeg  OR  choco install ffmpeg
+#   Verify: ffmpeg -version && ffprobe -version
+
+# ── Speech-to-Text (100% Local Whisper) ────────────────────────────────────────
+faster-whisper>=1.0.0              # High-performance CTranslate2 Whisper engine (int8 CPU)
+av>=11.0.0,<19.0.0                 # faster-whisper passes metadata_errors, removed in PyAV 19
+ctranslate2>=4.0.0                 # Fast inference engine for Whisper on CPU/CUDA
+openai-whisper>=20231117           # OpenAI Whisper (fallback engine if faster-whisper fails)
+torch>=2.2.0                       # PyTorch backend (CPU build is sufficient if no CUDA)
+torchaudio>=2.2.0                  # Audio utilities for Whisper
+nvidia-cublas-cu12>=12.0.0         # NVIDIA CUDA cuBLAS runtime DLLs for GPU acceleration
+nvidia-cudnn-cu12>=9.0.0           # NVIDIA CUDA cuDNN runtime DLLs for GPU acceleration
+
+# ── Local LLM Orchestration — Ollama + Qwen ───────────────────────────────────
+langchain>=0.2.0
+langchain-core>=0.2.0
+langchain-community>=0.2.0
+langchain-ollama>=0.1.0            # Local Ollama bridge
+langchain-text-splitters>=0.2.0   # RecursiveCharacterTextSplitter (used in summarizer + vector_store)
+ollama>=0.2.0                      # Official Ollama Python library
+requests>=2.32.0                   # Direct local HTTP calls to Ollama API
+
+# ── Local Multilingual RAG Pipeline ───────────────────────────────────────────
+faiss-cpu>=1.8.0                   # In-memory session-scoped vector search (CPU build)
+sentence-transformers>=3.0.0       # Multilingual embeddings (paraphrase-multilingual)
+huggingface-hub>=0.23.0            # Local model cache management
+tiktoken>=0.7.0                    # Token counting for context window management
+
+# ── Image Processing (for video frame analysis) ───────────────────────────────
+Pillow>=10.0.0                     # Image loading and resizing for frame deduplication
+
+# ── Streamlit UI ──────────────────────────────────────────────────────────────
+streamlit>=1.35.0
+streamlit-extras>=0.4.0
+watchdog>=4.0.0                    # Enables Streamlit's file watcher for faster dev reloads
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0               # Load .env configuration
+numpy>=1.26.0                      # Numerical operations (audio analysis, embeddings)
+tqdm>=4.66.0                       # Progress bars for model loading

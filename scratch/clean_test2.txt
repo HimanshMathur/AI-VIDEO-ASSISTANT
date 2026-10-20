@@ -1,0 +1,6 @@
+Hindi preserved: 'नहीं' -> 'नहीं' OK=True
+Punjabi preserved: 'मैं' -> 'मैं' OK=True
+trailing space stripped: 'hello world ' -> 'hello world' OK=True
+orphaned mark after space stripped: 'abc ा' -> 'abc' OK=True
+Devanagari preserved: 'वीडियो' -> 'वीडियो' OK=True
+Hinglish preserved: 'video mein kya' -> 'video mein kya' OK=True

@@ -1,0 +1,69 @@
+{
+  "video_path": "C:\\Users\\mathu\\Downloads\\Product Marketing Meeting (weekly) 2021-06-28.mp4",
+  "visual_evidence_count": 25,
+  "qa_results": [
+    {
+      "question": "How many people are visible in the video?",
+      "expected_intent": "VISUAL_ONLY",
+      "actual_intent": "VISUAL_ONLY",
+      "visual_retrieved": 2,
+      "top_visual_snippet": "[VISUAL EVIDENCE 00:01:47]\nGot it, let's break down the video frame. First, the visible people count. On the right side, there's a video call interface with multiple participants. Let's count: there a",
+      "answer_time": 18.189708471298218,
+      "answer": "Based on the description provided, there are **8 visible people** in the video call on the right side."
+    },
+    {
+      "question": "What are the people doing?",
+      "expected_intent": "VISUAL_ONLY",
+      "actual_intent": "MULTIMODAL",
+      "visual_retrieved": 2,
+      "top_visual_snippet": "[VISUAL EVIDENCE 00:42:38]\nGot it, let's break down the video frame. First, count the people. The grid is 3x3, so 9 people total. Now, what are they doing? Let's check each cell. Top row: left has a p",
+      "answer_time": 25.946613311767578,
+      "answer": "The people in the video are participating in a video call. Each person is in their own room with different backgrounds, such as a kitchen, a room with furniture, or a room with a drum set. Some individuals are wearing headphones, and they are likely engaged in a discussion or presentation. The only visible text on the screen is the \"GitLab\" logo on a purple background in the top-middle cell."
+    },
+    {
+      "question": "Who appears to be presenting?",
+      "expected_intent": "MULTIMODAL",
+      "actual_intent": "MULTIMODAL",
+      "visual_retrieved": 2,
+      "top_visual_snippet": "[VISUAL EVIDENCE 00:08:53]\nGot it, let's break down the video frame. First, the visible people: there are multiple video call participants. On the right side, there's a split-screen with several peopl",
+      "answer_time": 9.814385175704956,
+      "answer": "The video does not provide enough visual evidence to determine who appears to be presenting."
+    },
+    {
+      "question": "What is visible on the screen?",
+      "expected_intent": "VISUAL_ONLY",
+      "actual_intent": "VISUAL_ONLY",
+      "visual_retrieved": 2,
+      "top_visual_snippet": "[VISUAL EVIDENCE 00:05:20]\n- Visible people count: 9  \n- What people or participants are visually doing: Each individual is seated in their own video window, participating in a video call. Some wear h",
+      "answer_time": 16.51424264907837,
+      "answer": "On the screen, there are nine video windows arranged in a 3x3 grid. In the top-middle window, there is a purple background with the \"GitLab\" logo. The other video windows show different indoor environments, such as a kitchen, a living room, a room with a drum set, and a room with framed art and curtains. No other slides, diagrams, charts, or UI elements are visible on the screens."
+    },
+    {
+      "question": "What did they discuss?",
+      "expected_intent": "TEXT_ONLY",
+      "actual_intent": "TEXT_ONLY",
+      "visual_retrieved": 2,
+      "top_visual_snippet": "[VISUAL EVIDENCE 00:31:59]\n- Visible people count: 9  \n- Actions: Each participant appears to be engaged in a video call (speaking or observing), with no explicit actions beyond typical video call beh",
+      "answer_time": 18.393375873565674,
+      "answer": "They discussed various topics related to product development, press strategies, and feature announcements. They mentioned past press activities around an acquisition, the integration of features, and the importance of making announcements during product keynotes. They also talked about the stages of product development, the need for clarity in describing these stages, and the idea of creating a messaging framework to align with the company's vision and roadmap. Additionally, they referenced the progress made over the past year and the transition of certain features from beta to full release."
+    },
+    {
+      "question": "What was being shown when they discussed the topic?",
+      "expected_intent": "MULTIMODAL",
+      "actual_intent": "TEXT_ONLY",
+      "visual_retrieved": 2,
+      "top_visual_snippet": "[VISUAL EVIDENCE 00:31:59]\n- Visible people count: 9  \n- Actions: Each participant appears to be engaged in a video call (speaking or observing), with no explicit actions beyond typical video call beh",
+      "answer_time": 18.29192852973938,
+      "answer": "The video shows a presentation discussing the stages of product development and the challenges of making product announcements at GitLab. The speaker talks about the need to highlight features that have reached a level of maturity and are ready for public announcement. They also mention the importance of aligning with the company's public roadmap and the difficulty of making impactful announcements due to the public nature of GitLab's roadmap. Visuals include slides and the speaker presenting to an audience, with some mention of past events and product integrations."
+    },
+    {
+      "question": "Video mein kitne log dikh rahe hain aur screen par kya chal raha hai?",
+      "expected_intent": "MULTIMODAL",
+      "actual_intent": "VISUAL_ONLY",
+      "visual_retrieved": 2,
+      "top_visual_snippet": "[VISUAL EVIDENCE 00:40:52]\nGot it, let's break down the video frame based on the description. First, the visible people: there's a video call interface on the right side with multiple participants. Le",
+      "answer_time": 24.505374908447266,
+      "answer": "Video mein **4 log dikh rahe hain** (video call ke 4 participants).  \n\nScreen par **Google Docs document** chal raha hai, jo \"Commit '21 Product Announcements\" kiya hai. Document mei ek table hai jo \"Capability/Feature\", \"Brief Description\", \"Why It Matters\", aur \"Excitement Level\" ke columns mei hai. Yeh document product announcements ke liye hai.  \n\nVideo call ke participants ke liye ek vertical split screen mei 4 video windows dikh rahi hain."
+    }
+  ]
+}
