@@ -172,6 +172,30 @@ class RAGRegressionTests(unittest.TestCase):
         self.assertEqual(classify_question_intent("What is happening visually at 5:06?"), "VISUAL_ONLY")
         self.assertEqual(classify_question_intent("What color is the kettle at 5:06?"), "VISUAL_ONLY")
 
+    def test_video_overview_uses_timeline_wide_transcript_evidence(self):
+        self.assertEqual(classify_question_intent("Explain the video"), "TEXT_ONLY")
+        self.assertEqual(classify_question_intent("Explain what happened in the video."), "TEXT_ONLY")
+        self.assertEqual(classify_question_intent("What is this video about?"), "TEXT_ONLY")
+        self.assertEqual(classify_question_intent("Summarize this video"), "TEXT_ONLY")
+        self.assertEqual(classify_question_intent("Summarize each main topic in order."), "TEXT_ONLY")
+        self.assertEqual(classify_question_intent("Summarize the video topic by topic."), "TEXT_ONLY")
+        self.assertEqual(classify_question_intent("Video mein kya hua?"), "TEXT_ONLY")
+        self.assertEqual(classify_question_intent("Ye video kis baare mein hai?"), "TEXT_ONLY")
+        self.assertEqual(classify_question_intent("Video mein kya-kya hua?"), "TEXT_ONLY")
+        chain = self._chain()
+        chain.vector_store.chunks = [
+            {"chunk_id": f"chunk-{i}", "chunk_index": i, "text": f"Section {i} key idea."}
+            for i in range(20)
+        ]
+        with patch("core.rag_engine.chat_completion", return_value="The video explains the topic in sequence.") as model:
+            answer = ask_question(chain, "Explain the video")
+        self.assertIn("sequence", answer)
+        prompt = model.call_args.args[0][0]["content"]
+        self.assertIn("sample of a longer transcript", prompt)
+        self.assertIn("Section 0 key idea", prompt)
+        self.assertIn("Section 19 key idea", prompt)
+        self.assertEqual(chain.retrieve.call_count, 0)
+
     def test_timestamp_visual_attribute_uses_visual_only_route(self):
         self.assertEqual(
             classify_question_intent("What color shirt is the person wearing at 0:58?"),

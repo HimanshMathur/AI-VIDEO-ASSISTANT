@@ -853,6 +853,11 @@ def classify_question_intent(question: str, has_visual_store: bool = True) -> st
     if not question:
         return "TEXT_ONLY"
 
+    # Overview requests need evidence from across the transcript, rather than
+    # only the semantically nearest chunks used for ordinary fact questions.
+    if _is_video_overview_request(question):
+        return "TEXT_ONLY"
+
     timestamp_intent = _timestamp_intent(question, has_visual_store)
     if timestamp_intent:
         return timestamp_intent
@@ -910,6 +915,42 @@ def classify_question_intent(question: str, has_visual_store: bool = True) -> st
         return "TEXT_ONLY"
 
 
+def _is_video_overview_request(question: str) -> bool:
+    """Recognize broad requests to explain or summarize the video's content."""
+    if _question_timestamp(question) is not None:
+        return False
+    normalized = re.sub(r"[^\w\s]", " ", (question or "").casefold())
+    normalized = " ".join(normalized.split())
+    patterns = (
+        r"\b(summari[sz]e|recap|outline)\b.{0,40}\b(each|all|main|key)\b.{0,20}\b(topics?|points?|sections?)\b",
+        r"\b(summari[sz]e|summary|recap|outline)\b.{0,35}\btopic by topic\b|\btopic by topic\b.{0,25}\b(summary|summari[sz]e|recap)\b",
+        r"\b(explain|summari[sz]e|describe|recap)\b.{0,35}\b(video|this|it)\b",
+        r"\b(video|this video)\b.{0,25}\b(about|summary|main topic)\b",
+        r"\bwhat (happened|happens|is happening)\b.{0,25}\b(video|this)\b",
+        r"\b(video|this video|ye video)\b.{0,35}\b(kya hua|mein kya hua|mein kya kya hua|kis baare mein|kis bare mein|ka main topic kya hai)\b",
+        r"\b(video|is video)\b.{0,20}\b(samjhao|samjha|ka saar)\b",
+        r"\b(video|वीडियो)\b.{0,30}\b(समझाओ|सारांश|क्या हुआ|मुख्य विषय)\b",
+    )
+    return any(re.search(pattern, normalized) for pattern in patterns)
+
+
+def _overview_transcript_docs(rag_chain: Any, limit: int = 16):
+    """Select chronological, timeline-wide transcript evidence for overview requests."""
+    store = getattr(rag_chain, "vector_store", None)
+    chunks = list(getattr(store, "chunks", []) or [])
+    if not chunks:
+        return []
+    ordered = sorted(chunks, key=lambda item: int(item.get("chunk_index", 0) or 0))
+    if len(ordered) > limit:
+        # Evenly sample the full timeline; disclose the sampling in the prompt.
+        indices = [round(i * (len(ordered) - 1) / (limit - 1)) for i in range(limit)]
+        ordered = [ordered[i] for i in dict.fromkeys(indices)]
+    return [FaissDocument(
+        page_content=item.get("text", ""),
+        metadata={key: value for key, value in item.items() if key != "text"},
+    ) for item in ordered if item.get("text", "").strip()]
+
+
 def _rerank_evidence(question: str, documents: List[FaissDocument], limit: int) -> List[FaissDocument]:
     """Rerank semantic candidates by exact content overlap while retaining semantic order.
 
@@ -963,19 +1004,21 @@ def _rerank_evidence(question: str, documents: List[FaissDocument], limit: int) 
 def format_context(
     transcript_docs: List[FaissDocument],
     visual_docs: Optional[List[FaissDocument]] = None,
+    transcript_limit: int = 3,
+    transcript_char_limit: int = 500,
 ) -> str:
     """Format retrieved transcript chunks and visual evidence into clean sections for Qwen."""
     sections = []
 
     if transcript_docs:
         t_parts = ["--- [TRANSCRIPT EVIDENCE (SPOKEN AUDIO)] ---"]
-        for i, doc in enumerate(transcript_docs[:3]):
+        for i, doc in enumerate(transcript_docs[:transcript_limit]):
             meta = doc.metadata
             chunk_idx = meta.get("chunk_index", i + 1)
             t_sec = meta.get("start_seconds", 0.0)
             t_parts.append(
                 f"[Transcript Excerpt {i + 1} (~{int(t_sec//60):02d}:{int(t_sec%60):02d} | Offset ~{meta.get('start_time', 0)}%-{meta.get('end_time', 0)}%)]\n"
-                f"{doc.page_content.strip()[:500]}"
+                f"{doc.page_content.strip()[:transcript_char_limit]}"
             )
         sections.append("\n\n".join(t_parts))
 
@@ -1129,6 +1172,7 @@ def _prepare_rag_messages(
     # ── Stage 1: Intent classification ─────────────────────────────────────
     t0 = time.time()
     intent = classify_question_intent(clean_question, has_visual_store=has_visual_store)
+    overview_request = _is_video_overview_request(clean_question)
     target_seconds = _question_timestamp(clean_question)
     asks_distinct_people = bool(re.search(
         r"\b(how many|number of|count|total)\b.{0,35}\b(people|persons?|individuals?)\b|"
@@ -1175,7 +1219,9 @@ def _prepare_rag_messages(
             t_v_ret = time.time() - t0
     elif not has_visual_store or intent == "TEXT_ONLY":
         t0 = time.time()
-        if hasattr(rag_chain, "retrieve"):
+        if overview_request:
+            transcript_docs = _overview_transcript_docs(rag_chain)
+        elif hasattr(rag_chain, "retrieve"):
             transcript_docs = rag_chain.retrieve(retrieval_question or clean_question)
         elif hasattr(rag_chain, "vector_store"):
             transcript_docs = rag_chain.vector_store.similarity_search(retrieval_question or clean_question, k=12)
@@ -1242,7 +1288,8 @@ def _prepare_rag_messages(
             visual_docs = combined_visual[:5]
         t_v_ret = time.time() - t0
 
-    transcript_docs = _rerank_evidence(retrieval_question or clean_question, transcript_docs, limit=getattr(rag_chain, "top_k", 6))
+    if not overview_request:
+        transcript_docs = _rerank_evidence(retrieval_question or clean_question, transcript_docs, limit=getattr(rag_chain, "top_k", 6))
     if not asks_distinct_people:
         visual_docs = _rerank_evidence(
             retrieval_question or clean_question,
@@ -1257,12 +1304,17 @@ def _prepare_rag_messages(
         doc for doc in visual_docs if doc.metadata.get("chunk_id") not in
         {item.metadata.get("chunk_id") for item in timestamp_visual_docs}
     ]
-    transcript_docs = transcript_docs[:max(getattr(rag_chain, "top_k", 6), len(timestamp_transcript_docs))]
+    if not overview_request:
+        transcript_docs = transcript_docs[:max(getattr(rag_chain, "top_k", 6), len(timestamp_transcript_docs))]
     visual_docs = visual_docs[:max(
         12 if intent == "VISUAL_ONLY" and asks_distinct_people else 5,
         len(timestamp_visual_docs),
     )]
-    context_text = format_context(transcript_docs, visual_docs)
+    context_text = format_context(
+        transcript_docs, visual_docs,
+        transcript_limit=16 if overview_request else 3,
+        transcript_char_limit=800 if overview_request else 500,
+    )
     if people_identity_summary:
         context_text += "\n\n--- [CROSS-FRAME PERSON IDENTITY ANALYSIS] ---\n" + people_identity_summary
 
@@ -1300,6 +1352,16 @@ def _prepare_rag_messages(
         system_prompt += (
             "QUESTION RELEVANCE: Answer the user's requested question from transcript evidence. For a broad question about what the video is about or what happens, give a concise summary of the spoken/story content and its key ideas; do not describe frames, setting, people, or screen graphics. For a learning or lesson question, state only lessons supported by what the transcript actually says; do not infer unsupported discussion topics. If the video does not directly cover the requested application, say so and mention only a related idea explicitly present in the transcript. Do not provide general-world suggestions or advice that the video did not give, even if they seem helpful. Keep the answer focused on the requested subject.\n\n"
         )
+        if overview_request:
+            total_chunks = len(getattr(getattr(rag_chain, "vector_store", None), "chunks", []) or [])
+            sampled = total_chunks > len(transcript_docs)
+            system_prompt += (
+                "VIDEO OVERVIEW: Explain the central topic and follow the order of the supplied transcript evidence. "
+                "Cover its main concepts, arguments, steps, examples, details, and takeaway when supported. "
+                "The excerpts are arranged across the timeline. "
+                + ("They are a sample of a longer transcript, so state that the overview is based on sampled excerpts and do not imply every segment was covered. " if sampled else "Use the supplied excerpts as the complete indexed transcript. ")
+                + "If an important part is not represented, say so rather than guessing.\n\n"
+            )
 
     if target_seconds is not None and timestamp_transcript_docs:
         system_prompt += (
